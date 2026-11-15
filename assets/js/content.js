@@ -14,9 +14,9 @@
 window.PORTFOLIO = {
   /* ---------- Browser tab & search results ---------- */
   meta: {
-    siteTitle: "Youcef Tahraoui — Quality Control Team Lead, Fin Crime Investigations",
+    siteTitle: "Youcef Tahraoui — Senior Team Lead, Fin Crime Investigations",
     description:
-      "Portfolio, CV and link directory for Youcef Tahraoui, a quality control team lead in financial crime investigations based in Kraków, Poland.",
+      "Portfolio, CV and link directory for Youcef Tahraoui, a senior team lead in financial crime investigations based in Kraków, Poland.",
   },
 
   /* ---------- The person ---------- */
@@ -24,7 +24,7 @@ window.PORTFOLIO = {
     name: "Youcef Tahraoui",
     initials: "YT", // shown in the avatar tile
     // photo: "assets/img/portrait.jpg", // optional: uncomment after adding your photo
-    role: "Mid Quality Control Team Lead (Fin Crime Investigations)",
+    role: "Senior Team Lead (Fin Crime Investigations)",
     location: "Kraków, Poland",
     timezone: "Europe/Warsaw", // used for the live local-time display
     email: "tahraoui20@outlook.fr",
@@ -117,7 +117,7 @@ window.PORTFOLIO = {
   /* ---------- Experience (newest first) ---------- */
   experience: [
     {
-      role: "Mid Quality Team Lead (Fin Crime Investigations)",
+      role: "Senior Team Lead (Fin Crime Investigations)",
       company: "Revolut",
       location: "Kraków, Poland",
       start: "09/2023",
