@@ -45,6 +45,20 @@
       );
     }
     if (p.location) contact.push("<span>" + esc(p.location) + "</span>");
+
+    var linkedin = (data.links || []).filter(function (link) {
+      return /linkedin\.com/i.test(link.url || "");
+    })[0];
+    if (linkedin) {
+      contact.push(
+        '<span><a href="' +
+          esc(linkedin.url) +
+          '">' +
+          esc(linkedin.handle || linkedin.url) +
+          "</a></span>",
+      );
+    }
+
     if (p.languages && p.languages.length) {
       contact.push(
         "<span>" +

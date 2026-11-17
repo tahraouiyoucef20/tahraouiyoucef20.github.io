@@ -8,7 +8,7 @@ fully responsive, and free to host on GitHub Pages.
 index.html                 the portfolio + link directory
 cv.html                    one-page CV you can save as PDF
 assets/
-  cv.pdf                   your original CV (downloadable from the site)
+  cv.pdf                   CV in PDF form (downloadable from the site)
   css/styles.css           all site styling
   css/cv.css               CV page styling
   js/content.js            ← your details live here (edit this file)
@@ -87,45 +87,48 @@ the palette adapts automatically.
 
 `cv.html` is generated from the same `content.js`, so it always matches the portfolio.
 Open it, click **Download PDF**, and in the print dialog choose *Save as PDF* (A4, margins
-default). The **Original PDF** link in the toolbar (and the "Résumé / CV" card) downloads
-your uploaded CV at `assets/cv.pdf` instead — replace that file to update it.
+default). The "Résumé / CV" card on the main page serves `assets/cv.pdf`, which is produced
+from this same page — replace that file whenever you change the content.
 
 `profile.summary` is the paragraph at the top, and `profile.phone` only appears here.
 It is currently empty so the number stays off the public site.
 
-## 4. Publish for free on GitHub Pages
+## 4. Publishing (GitHub Pages)
 
-1. Create a free account at [github.com](https://github.com).
-2. Click **New repository**. Name it `portfolio` (or any name) and make it **Public**.
-   For a shorter URL later, naming it `yourusername.github.io` is also an option.
-3. On the new repo page, click **uploading an existing file**, then drag in everything from
-   this folder — `index.html`, `cv.html`, `README.md`, and the whole `assets` folder.
-   Keep the folder structure intact. Commit the changes.
-4. Go to **Settings → Pages**. Under *Build and deployment* choose
-   **Source: Deploy from a branch**, **Branch: `main`**, folder **`/ (root)`**, then **Save**.
-5. Wait 1–2 minutes. Your site is live at `https://YOUR-USERNAME.github.io/portfolio/`
-   (or `https://YOUR-USERNAME.github.io/` if you used the special repo name).
+This folder is already a git repository wired to
+`https://github.com/tahraouiyoucef20/tahraouiyoucef20.github.io`, and the site is live at
+**https://tahraouiyoucef20.github.io/**.
 
-All links are relative, so the site works the same in a subfolder or at the root.
-
-### After it's live
-
-- Update the placeholder `og:url` (and add an `og:image` if you like) in `index.html` so
-  link previews look right when you share the URL.
-- Re-deploying is just uploading the changed file and committing again.
-
-### Prefer the command line?
+To publish a change:
 
 ```bash
-git init
-git add .
+git add -A
+git commit -m "Update content"
+git push
+```
+
+GitHub rebuilds within a minute. Pages itself is configured in **Settings → Pages**:
+*Deploy from a branch*, branch `main`, folder `/ (root)`.
+
+All links are relative, so the site would work the same in a subfolder.
+
+### Setting it up from scratch (another account)
+
+1. Create a free account at [github.com](https://github.com) and verify the email.
+2. **New repository** → name it `yourusername.github.io` (gives the short root URL) → **Public**
+   → don't add a README → **Create repository**.
+3. Upload everything in this folder via **Add file → Upload files** (select the *contents*,
+   not the folder itself), or push with the commands below.
+4. **Settings → Pages** → Source: *Deploy from a branch* → branch `main`, folder `/ (root)` → **Save**.
+5. Wait 1–3 minutes, then open `https://yourusername.github.io/`.
+
+```bash
+git init -b main
+git add -A
 git commit -m "Initial portfolio"
-git branch -M main
 git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
 git push -u origin main
 ```
-
-Then enable Pages as in step 4.
 
 ## 5. Optional: your own domain
 
@@ -135,9 +138,8 @@ shows you, and enable *Enforce HTTPS* once it verifies. A `.com` costs money, bu
 
 ## Good to know
 
-- **Privacy:** everything you publish is public. The uploaded `assets/cv.pdf` still contains
-  your phone number and email even though the website itself hides the phone. Replace that
-  file with a version without the number if you'd rather not share it.
+- **Privacy:** everything you publish is public. `assets/cv.pdf` was generated from the CV
+  page, so it contains only your email and location — no phone number.
 - **Theme:** the site remembers light/dark in `localStorage`; default is dark.
 - **Printing the portfolio:** `Ctrl/Cmd + P` on the main page also produces a clean copy,
   with link URLs included. The CV page is the better option for applications.

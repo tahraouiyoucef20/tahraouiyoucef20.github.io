@@ -97,7 +97,7 @@ window.PORTFOLIO = {
       label: "Résumé / CV",
       mono: "CV",
       handle: "PDF · 2 pages",
-      note: "The original CV — same content as the CV page.",
+      note: "Download the CV as a PDF, ready to attach.",
       url: "assets/cv.pdf",
       download: true,
       group: "contact",
