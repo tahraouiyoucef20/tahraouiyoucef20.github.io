@@ -45,12 +45,12 @@
     pin: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.65 7-11a7 7 0 1 0-14 0c0 5.35 7 11 7 11Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>',
     clock:
       '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-    mail: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="m4.5 8 6.4 4.7a2 2 0 0 0 2.2 0L19.5 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+    mail: '<svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="m4.5 8 6.4 4.7a2 2 0 0 0 2.2 0L19.5 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
     arrow:
       '<svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5.5-5.5L18 12l-5.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     diagArrow:
       '<svg class="link-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5M9.5 7.5h7v7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-    copy: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M15 6.5A2.5 2.5 0 0 0 12.5 4h-6A2.5 2.5 0 0 0 4 6.5v6A2.5 2.5 0 0 0 6.5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+    copy: '<svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M15 6.5A2.5 2.5 0 0 0 12.5 4h-6A2.5 2.5 0 0 0 4 6.5v6A2.5 2.5 0 0 0 6.5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
   };
 
   /* ---------- Meta ---------- */

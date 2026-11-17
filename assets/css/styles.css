@@ -304,6 +304,13 @@ button {
   transition: transform 0.2s var(--ease);
 }
 
+/* Any icon placed directly in a button keeps its size, even without .ico */
+.btn > svg {
+  flex: none;
+  width: 16px;
+  height: 16px;
+}
+
 .btn:hover .ico {
   transform: translateX(2px);
 }
